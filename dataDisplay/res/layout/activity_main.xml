@@ -1,0 +1,322 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+  
+    <!-- accelerometer -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="22sp"
+            android:text="@string/accelerometer_view"
+            android:gravity="left"  >
+        </TextView>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"     
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1" 
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Accel_label_X"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Accel_label_Y"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Accel_label_Z"
+            android:gravity="center" 
+            android:textSize="20sp" /> 
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/Accel_Data_X"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Accel_Data_Y"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Accel_Data_Z"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+    </TableRow>
+
+    <!-- gyroscope -->
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="22sp"
+            android:text="@string/gyroscope_view"
+            android:gravity="left"  >
+        </TextView>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow12"     
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1" 
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Gyro_label_X"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Gyro_label_Y"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Gyro_label_Z"
+            android:gravity="center" 
+            android:textSize="20sp" /> 
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/Gyro_Data_X"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Gyro_Data_Y"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Gyro_Data_Z"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_Accel_X" 
+            android:gravity="center" 
+            android:textSize="20sp" />
+    </TableRow>
+ 
+    <!-- GPS start -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="22sp"
+            android:text="@string/GPS_view"
+            android:gravity="left"  >
+        </TextView>
+    </TableRow>
+<!--  1st GPS row  (lat | lon | alt) --> 
+   <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/GPS_label_lat"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GPS_label_lon"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GPS_label_alt"
+            android:gravity="center" 
+            android:textSize="20sp" />
+    </TableRow>
+    
+   <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/GPS_Data_Lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/default_GPS_lat"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/GPS_Data_Lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_GPS_lon"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/GPS_Data_Alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_GPS"
+            android:gravity="center" 
+            android:textSize="20sp" />
+    </TableRow>
+<!--  2nd GPS row (accuracy | bearing | number of locs found)--> 
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/GPS_label_acc"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GPS_label_bearing"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GPS_label_speed"
+            android:gravity="center" 
+            android:textSize="20sp" />
+    </TableRow>
+    
+   <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/GPS_Data_Acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text= "@string/default_GPS"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/GPS_Data_Bearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_GPS"
+            android:gravity="center" 
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/GPS_Data_Speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_GPS"
+            android:gravity="center" 
+            android:textSize="20sp" />       
+    </TableRow>
+    <!-- barometric pressure -->
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="22sp"
+            android:text="@string/Barom_label_alt"
+            android:gravity="center"  >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:id="@+id/BAROM_ALT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="22sp"
+            android:text="@string/default_BAROM"
+            android:gravity="left"  >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start new test" 
+        android:onClick="onMyButtonClick" />
+    
+    
+
+</TableLayout>

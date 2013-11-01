@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">sensor</string>
+    <string name="accelerometer_view">Accelerometer</string>
+    <string name="gyroscope_view">Gyroscope</string>
+    <string name="GPS_view">GPS</string>
+    
+    <string name="default_Accel_X">0.00</string>
+    <string name="default_Accel_Y">0.00</string>
+    <string name="default_Accel_Z">0.00</string>
+    <string name="default_GPS_lat">0.00</string>
+    <string name="default_GPS_lon">0.00</string>
+    <string name="default_GPS">0.00</string>
+    <string name="default_BAROM">0.00</string>
+    
+    <string name="Accel_label_X">X</string>
+    <string name="Accel_label_Y">Y</string>
+    <string name="Accel_label_Z">Z</string>
+    <string name="Gyro_label_X">X</string>
+    <string name="Gyro_label_Y">Y</string>
+    <string name="Gyro_label_Z">Z</string>
+    <string name="GPS_label_lat">lat</string>
+    <string name="GPS_label_lon">lon</string>
+    <string name="GPS_label_alt">alt</string>
+    <string name="GPS_label_acc">accuracy</string>
+    <string name="GPS_label_speed">speed</string>
+    <string name="GPS_label_bearing">bearing</string>
+    <string name="GPS_label_locs">locs</string>
+    <string name="Barom_label_alt">Barometric Alt</string>
+    
+    
+    
+
+</resources>
